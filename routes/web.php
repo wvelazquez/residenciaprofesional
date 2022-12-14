@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\proyectoController;
+use App\Models\Proyecto;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,3 +27,5 @@ Route::middleware([
         return view('dash.index');
     })->name('dash');
 });
+
+Route::resource('proyectos', proyectoController::class);

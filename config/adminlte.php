@@ -312,11 +312,26 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
+            'text'    => 'Banco de proyectos',
+            'icon'    => 'fas fa-fw fa-share',
+            'submenu' => [
+                [
+                    'text' => 'Mostrar todo',
+                    'url'  => 'proyectos',
+                ],
+                [
+                    'text' => 'Crear proyectos',
+                    'url'  => 'proyectos/create',
+                ],
+                [
+                    'text' => 'Actualizar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Eliminar',
+                    'url'  => '#',
+                ],
+            ],
         ],
         ['header' => 'account_settings'],
         [
